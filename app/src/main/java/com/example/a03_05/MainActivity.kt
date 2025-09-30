@@ -76,6 +76,7 @@ fun InputComponentsScreen(modifier: Modifier = Modifier) {
                 label = { Text("User") },
                 placeholder = { Text("Enter your username") },
                 singleLine = true,
+                // error handling
                 isError = user.length < 3 && user.isEmpty(),
                 supportingText = {
                     if (user.length < 3 && user.isNotEmpty()) {
@@ -98,6 +99,7 @@ fun InputComponentsScreen(modifier: Modifier = Modifier) {
                 label = { Text("Password") },
                 placeholder = { Text("Enter your password") },
                 singleLine = true,
+                // error handling
                 isError = password.length < 3 && password.isNotEmpty(),
                 supportingText = {
                     if (password.length < 3 && password.isNotEmpty()) {
