@@ -58,7 +58,7 @@ fun InputComponentsScreen(modifier: Modifier = Modifier) {
 
             var user by remember { mutableStateOf("") }
             var password by remember { mutableStateOf("") }
-            var valid by remember { mutableStateOf("Please fill all the fields") }
+            var valid by remember { mutableStateOf("") }
 
             Text(
                 "Login Details",
